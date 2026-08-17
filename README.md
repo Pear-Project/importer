@@ -32,6 +32,16 @@ sudo apt install pearos-magiclamp
 The repo is arranged `<arch>/<channel>/<release>/`, one flat apt suite per
 directory (`deb [signed-by=...] https://apt.pearos.xyz/<arch>/<channel>/<release> ./`).
 
+**Architectures**
+
+| `dpkg --print-architecture` | Repo dir  |
+|------------------------------|-----------|
+| `amd64`                      | `x86_64`  |
+| `arm64`                      | `aarch64` |
+
+Auto-detected by the script - no flag for it. Any other architecture is
+rejected (pearOS doesn't build for it).
+
 **Channels**
 
 | Channel   | Description                  |
